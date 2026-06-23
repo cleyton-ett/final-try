@@ -1,0 +1,1 @@
+{"version":3,"file":"intrumento.router.js","sourceRoot":"","sources":["../../src/routes/intrumento.router.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,SAAS,CAAC;AACjC,OAAO,EAAE,aAAa,EAAE,cAAc,EAAE,MAAM,0CAA0C,CAAC;AACzF,MAAM,CAAC,MAAM,WAAW,GAAG,MAAM,EAAE,CAAA;AAEnC,WAAW,CAAC,IAAI,CAAC,GAAG,EAAE,aAAa,CAAC,CAAA;AACpC,WAAW,CAAC,GAAG,CAAC,GAAG,EAAE,cAAc,CAAC,CAAA"}
