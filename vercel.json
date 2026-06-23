@@ -1,0 +1,17 @@
+{
+  "version":2,
+  "builds": [
+    {
+      "src":"scr/app.js",
+      "use": "@vercel/mode"
+    }
+  ],
+  "routes":[
+    {
+      "src":"/(.*)",
+      "dest":"src/app.js"
+    }
+  ]
+}
+
+  
