@@ -23,18 +23,22 @@ const upload = multer({storage})
 
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "*",
     methods:["GET","POST"],
 }))
 
 app.use(express.json())
-app.use("/uploads", express.static(path.join(process.cwd(), "uploads")))
 
+app.get("/", (req,res)=>{
+    res.json({
+        message:"API online"
+    })
+})
+app.use(express.urlencoded({extended:true}));
 
 
 AppDataSource.initialize().then(() =>{
     console.log("DATABASE CONNECTED SUCCESSFULLY!")
-    app.listen(777,()=>{console.log('listening to port 777')})
 }).catch(error =>{
     console.log(error)
 } )
@@ -42,3 +46,5 @@ app.use("/jogo",jogo)
 app.use("/instrumento", instrumento)
 app.use("/arte", upload.single("imagem"), autores)
 app.use("/livros", livros)
+
+export default app

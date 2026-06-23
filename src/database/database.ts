@@ -18,5 +18,13 @@ export const AppDataSource = new DataSource({
     entities: [ arte ],
     subscribers: [],
     migrations: [],
+
+    ssl:{
+        rejectUnauthorized:false,
+    },
+
+    extra:{
+        connectionLimit:5
+    }
     
 })
