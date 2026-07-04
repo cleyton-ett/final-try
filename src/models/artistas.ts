@@ -1,6 +1,6 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity()
+@Entity("arte")
 export class arte{
     @PrimaryGeneratedColumn()
     id!: number
@@ -10,8 +10,6 @@ export class arte{
 
     @Column({nullable: true})
     imagem!: string
-
-    
 
     @Column()
     descricao!: string

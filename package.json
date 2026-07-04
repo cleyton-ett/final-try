@@ -6,21 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "node dist/app.js"
+    "start": "node dist/app.js",
+    "dev": "tsx watch src/app.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-<<<<<<< HEAD
+
     "@vercel/node": "^5.8.19",
-=======
+
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/multer": "^2.1.0",
     "@types/node": "^25.9.2",
->>>>>>> 8fbccef9d2544b09f1e0691ff912a3a8cb6b86ce
     "cloudinary": "^1.41.3",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
@@ -29,7 +29,6 @@
     "multer-storage-cloudinary": "^4.0.0",
     "mysql2": "^3.22.5",
     "reflect-metadata": "^0.2.2",
-<<<<<<< HEAD
     "typeorm": "^1.0.0"
   },
   "devDependencies": {
@@ -37,8 +36,6 @@
     "@types/express": "^5.0.6",
     "@types/multer": "^2.1.0",
     "@types/node": "^25.9.2",
-=======
->>>>>>> 8fbccef9d2544b09f1e0691ff912a3a8cb6b86ce
     "ts-node": "^10.9.2",
     "typeorm": "^1.0.0",
     "typescript": "^6.0.3"

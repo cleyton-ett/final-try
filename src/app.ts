@@ -36,6 +36,12 @@ app.get("/", (req,res)=>{
 })
 app.use(express.urlencoded({extended:true}));
 
+const PORT = process.env.PORT || 777;
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
+
 
 AppDataSource.initialize().then(() =>{
     console.log("DATABASE CONNECTED SUCCESSFULLY!")

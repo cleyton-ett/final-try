@@ -13,9 +13,9 @@ export const AppDataSource = new DataSource({
     username: "root",
     password: "NQAJUhVSXbGgGUrurnvlEesXQikhLafU",
     database: "railway",
-    synchronize: true,
+    synchronize: false,
     logging: true,
-    entities: [ arte ],
+    entities: [__dirname + arte ],
     subscribers: [],
     migrations: [],
 
@@ -25,6 +25,6 @@ export const AppDataSource = new DataSource({
 
     extra:{
         connectionLimit:5
-    }
+    },
     
 })
