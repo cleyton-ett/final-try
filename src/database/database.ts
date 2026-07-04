@@ -13,7 +13,7 @@ export const AppDataSource = new DataSource({
     username: "root",
     password: "NQAJUhVSXbGgGUrurnvlEesXQikhLafU",
     database: "railway",
-    synchronize: false,
+    synchronize: true,
     logging: true,
     entities: [__dirname + arte ],
     subscribers: [],
