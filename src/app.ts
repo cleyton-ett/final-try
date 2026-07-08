@@ -29,8 +29,9 @@ app.use(cors({
         "http://localhost:5173",
         "https://astrobot-svp-configuration.netlify.app"
     ],
-    methods:["GET","POST"],
-    allowedHeaders: ['Content-Type']
+    methods:['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Accept', 'Authorization'],
+    credentials: true
 }))
 
 app.use(express.json())
