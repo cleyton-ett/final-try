@@ -20,15 +20,7 @@ const storage = new CloudinaryStorage({
 })
 const upload = multer({storage})
 
-app.use(cors({
-    origin: true,
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: [
-        "Content-Type",
-        "Authorization"
-    ]
-}));
+app.use(cors());
 
 app.use(express.json())
 
