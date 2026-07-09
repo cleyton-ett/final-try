@@ -19,7 +19,7 @@ const storage = new CloudinaryStorage({
 });
 const upload = multer({ storage });
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "*",
     methods: ["GET", "POST"],
 }));
 app.use(express.json());
