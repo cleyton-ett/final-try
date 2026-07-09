@@ -20,23 +20,14 @@ const storage = new CloudinaryStorage({
 })
 const upload = multer({storage})
 
-const allowedOrigins = [
-    "http://127.0.0.1:5500",
-    "http://127.0.0.1:5173",
-    "http://localhost:5500",
-    "http://localhost:5173",
-    "https://astrobot-svp-configuration.netlify.app"
-];
-
 app.use(cors({
-    origin(origin, callback) {
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
-        } else {
-            callback(new Error("Origin não permitida: " + origin));
-        }
-    },
-    credentials: true
+    origin: true,
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: [
+        "Content-Type",
+        "Authorization"
+    ]
 }));
 
 app.use(express.json())
