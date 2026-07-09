@@ -22,17 +22,7 @@ const upload = multer({storage})
 
 
 
-app.use(cors({
-    origin: [
-        "http://127.0.0.1:5500",
-        "http://localhost:5500",
-        "http://localhost:5173",
-        "https://astrobot-svp-configuration.netlify.app"
-    ],
-    methods:['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Accept', 'Authorization'],
-    credentials: true
-}))
+app.use(cors())
 
 app.use(express.json())
 
